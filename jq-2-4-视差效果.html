@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<script src="jquery/jquery-1.4.2.min.js"></script>
+	<style>
+.scroll_img{ height: 400px; line-height: 400px; font-size: 100px; background:url(images/BG1.jpg); color: #fff; margin-top:250px; text-align: center; text-shadow:0 3px 2px #625351; font-family:"microsoft yahei";}
+.sc2{ background-image:url(images/BG2.jpg);}
+.sc3{ background-image:url(images/BG3.jpg);}
+	</style>
+	<title>Document</title>
+	<script src="jquery/jquery-1.4.2.min.js"></script>
+	<script>
+	 	$(function(){
+	 		
+//	 		function view(obj){
+//	 			var viewindow=obj.viewindow;
+//	 			$(window).bind("scroll",checkscroll)
+//	 			function checkscroll(){
+//	 				$(viewindow).each(function(){
+//	 					var winh=$(window).height();
+//	 					var offset=$(this).offset().top;
+//	 					var elemh=$(this).height();
+//	 					var dis;
+//	 					var sc;
+//	 					if(offset<winh){
+//	 						dis=offset+elemh;
+//	 						sc=$(window).scrollTop();
+//	 						if(sc>dis){return;}
+//	 					}else{
+//	 						dis=winh+elemh;
+//	 						 sc=$(window).scrollTop()-offset+winh;
+//	 						if(sc<0){return;}
+//	 					}
+//	 					var bfb=sc/dis*100+"%";
+//	 					$(this).css("background-position","0 "+bfb)
+//	 				})
+//	 			}
+//	 		}	
+//	 	view({"viewindow":".scroll_img"})	
+//-------------------------------第一遍
+
+//		function view(obj){
+//			
+//			var dis;
+//			var scro;
+//			$(window).bind("scroll",checkscroll);
+//			function checkscroll(){
+//				$(viewwindow).each(function(){	
+//			var viewwindow=obj.viewwindow;
+//			var winh=$(window).height();
+//			var elemh=$(viewwindow).height();
+//			var offset=$(viewwindow).offset().top;
+//					if(winh>offset){
+//						dis=offset+elemh;
+//						scro=$(window).scrollTop();
+//						if(scro>dis){return}
+//					}else{
+//						dis=winh+elemh;
+//						scro=$(window).scrollTop()-offset+winh;
+//						if(scro<0){return}
+//					}
+//					var bfb=100-scro/dis*100+"%";
+//					$(this).css("background-position","0 "+bfb)
+//				})	
+//			}
+//		}
+//view({viewwindow:".scroll_img"})
+//-------------------------------第二遍
+
+
+//	function view(obj){
+//		var viewwindow=obj.viewwindow;
+//		var offset;
+//		var winh;
+//		var elemh=$(viewwindow).height();
+//		var dis;
+//		var scro;
+//		$(window).bind("scroll",checkscroll);
+//		function checkscroll(){
+//				winh=$(window).height();
+//			$(viewwindow).each(function(){
+//				offset=$(this).offset().top;
+//				if(offset<winh){
+//					dis=offset+elemh;
+//					scro=$(window).scrollTop();
+//					if(dis<scro){return}
+//				}else{
+//					dis=winh+elemh;
+//					scro=$(window).scrollTop()-offset+winh;
+//					if(scro<0){return}
+//				}
+//				var bfb=100-scro/dis*100+"%";
+//				$(this).css("background-position","0 "+bfb)
+//			})
+//		}
+//	
+//	}
+//view({viewwindow:".scroll_img"})
+//-------------------------------第三遍
+
+
+
+function view(obj){
+	var viewdiv=obj.wiewdiv
+	var dis;
+	var sc;
+	$(window).bind("scroll",checkscroll);
+	function checkscroll(){
+		$(viewdiv).each(function(){
+			var winh=$(window).height();
+			var elemh=$(this).height();
+			var offset=$(this).offset().top;
+			if(offset<winh){
+				dis=offset+elemh;
+				sc=$(window).scrollTop();
+				console.log(sc)
+				if(sc>dis){return}
+			}else{
+				dis=winh+elemh;
+				sc=$(window).scrollTop()-offset+winh;
+				if(sc<0){return}
+			}
+			var bfb=100-sc/dis*100+"%";
+			$(this).css("background-position","0 "+bfb);
+		})
+	}
+	
+}
+view({wiewdiv:".scroll_img"})
+
+//-------------------------------第四遍
+
+
+
+
+	 	})
+	</script>
+	
+</head>
+<body>
+	
+<br />
+	<br />
+	<div class="scroll_img"> this is img</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<div class="scroll_img sc2"> this is img s2</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<div class="scroll_img sc3"> this is img S3</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+		<br />
+	<br />
+	<br />
+	<br />
+	<br />
+		<br />
+	<br />
+	<br />
+	<br />
+	<br />
+		<br />
+	<br />
+	<br />
+	<br />
+	<br />
+		<br />
+	<br />
+	<br />
+	<br />
+	<br />
+		<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	
+</body>
+</html>
